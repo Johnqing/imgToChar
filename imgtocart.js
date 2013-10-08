@@ -43,8 +43,8 @@
 
   img.onload = function() {
     var characterStr, h, imgData, imgDataArr, imgDataHeight, imgDataWidth, imgHeight, imgWidth, w;
+    w = h = 0;
     character.style.width = img.width + 'px';
-    h = w = 0;
     imgWidth = img.width;
     imgHeight = img.height;
     canvas.width = imgWidth;
@@ -55,9 +55,9 @@
     imgDataWidth = imgData.width;
     imgDataHeight = imgData.height;
     characterStr = '';
-    for (; h < imgDataHeight; h += 12) {
+    for (h = 0; h < imgDataHeight; h += 12) {
 		var p = '<p>';
-		for (; w < imgDataWidth; w += 6) {
+		for (w = 0; w < imgDataWidth; w += 6) {
 			var index = (w + imgDataWidth * h) * 4;
 			var r = imgDataArr[index + 0];
 			var g = imgDataArr[index + 1];
