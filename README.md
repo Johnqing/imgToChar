@@ -5,12 +5,12 @@
 
 1. 页面中需要添加一个 `input file` 来上传图片，原因是 `canvas` 的 `getImageData` 不允许读取跨域图片
 2. 调用方法如下:
-``
+<pre>
 imgToChar({
 	file: document.getElementById('fileBtn'),
 	container: document.getElementById('character')
 })
-``
+</pre>
 
 
 ## 示例
