@@ -37,8 +37,6 @@
 
   canvas = document.createElement('canvas');
 
-  character.appendChild(canvas);
-
   cv = canvas.getContext('2d');
 
   img = new Image();
