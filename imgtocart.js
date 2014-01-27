@@ -85,4 +85,14 @@
     opts.file.onchange = getImg;
   };
 
+  document.body.onpaste = function(ev) {
+    var item;
+    item = ev.clipboardData.items;
+    console.log(ev);
+  };
+
 }).call(this);
+
+/*
+//@ sourceMappingURL=imgtocart.map
+*/

@@ -83,4 +83,9 @@ window.imgToChar = (opts) ->
 	character = opts.container or character
 	
 	opts.file.onchange = getImg
-	return 
+	return
+
+document.body.onpaste  = (ev)->
+	item =  ev.clipboardData.items
+	console.log ev
+	return
